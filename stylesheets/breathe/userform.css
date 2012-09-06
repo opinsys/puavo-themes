@@ -3,26 +3,67 @@ form table:not(.validate_users_list) th, form table:not(.validate_users_list) td
   padding: 0 10px 0 0;
   position:relative;
 }
+.rename_group_old_name{
+  text-align: right;
+  width: 35%;
+}
+.rename_group_new_name{
+  width: 60%;
+}
 
 
 @media all and (max-width: 800px) {
   form table:not(.validate_users_list) th, form table:not(.validate_users_list) td, form table:not(.validate_users_list) caption { 
-    display: block;
+    display: block !important;
+    text-align: left !important;
+    width: 95% !important;
   }
-  form tr td input[type="text"] {
+  form tr td input[type="text"], form tr td input[type="password"], form tr td input[type="email"], , form tr td input[type="tel"] {
     width: 95%;
   }
   form table {
+    margin: 2%;
     width: 95%;
+  }
+  form table:not(.validate_users_list) tr {
+    display: block !important;
+  }
+  .submit_button_container{
+    margin-left: 2% !important;
+  }
+  .btn{
+    font-size: 100% !important;
   }
 }
 
-form tr {
+form table:not(.validate_users_list) tr {
+  display: table;
+  margin: 0 0 5px;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+  width: 100%;
+}
+form table.rename_groups_table tr{
+  white-space: normal;
+}
+form table.new_groups_table tr td{
+  float: left !important;
+  width: 50% !important;
+  margin-right: 1em;
+}
+form table.validate_users_list tr{
   margin: 0 0 10px;
   white-space: nowrap;
   overflow: scroll;
   text-overflow: clip;
   width: 95%;
+}
+form table:not(.validate_users_list) tr:before,
+form table:not(.validate_users_list) tr:after {
+  display: table;
+  line-height: 0;
+  content: "";
 }
 
 form tr td {
@@ -33,6 +74,21 @@ table, td, th {
   vertical-align: top;
 }
 
+.external_services_system_groups div {
+  word-wrap: break-word;
+}
+.submit_button_container{
+  margin-left: 26.2345%;
+}
+.submit_button_container_no_margin{
+  margin-left: 0;
+}
+form[action$="users/import"] .submit_button_container{
+  margin-left:0;
+} 
+.external_service{
+  margin-left: 20%;
+}
 #device_puavoDeviceXrandr input,
 #device_macAddress input,
 #server_puavoExport_list input {

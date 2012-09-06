@@ -24,12 +24,12 @@ a img {border:none;}
 
 /* typography.css */
 html {background: none repeat scroll 0 0 #F2F2F2;font-size:100.01%;}
-body {font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
+body {font-size:80%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
 h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#2D2D2D;}
 h1 {font-size:3em;line-height:1;margin-bottom:0.5em;}
 h2 {font-size: 2em;margin-bottom: 0.75em;}
 h3 {font-size:1.3em;line-height:1;margin-bottom:1em;}
-h4 {font-size:14pt;line-height:1.25;margin-bottom:1.25em;}
+h4 {font-size:1.15em;line-height:1.25;margin-bottom:1.25em;}
 h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
 h6 {font-size:1em;font-weight:bold;}
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
@@ -37,7 +37,7 @@ p {margin:0 0 .5em;}
 p img.left {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
 p img.right {float:right;margin:1.5em 0 1.5em 1.5em;}
 a:focus, a:hover {color:#000;}
-a {color:#2A2D2A;text-decoration:none;}
+a {color:#13243F;text-decoration:none;}
 blockquote {margin:1.5em;color:#666;font-style:italic;}
 strong {font-weight:bold;}
 em, dfn {font-style:italic;}
@@ -54,15 +54,23 @@ ol {list-style-type:decimal;}
 dl {margin:0 0 1.5em 0;}
 dl dt {font-weight:bold;}
 dd {margin-left:1.5em;}
-table {margin-bottom:1.4em; table-layout:fixed;}
+img{max-width:100%;}
+table, table.organization-list {margin-bottom:0.25em; table-layout:fixed;width:70%;}
+table.full-width-list{width:100% !important;}
+div.organization{
+  width: 80%;
+}
+/*table.list{width:auto;}*/
 th {font-weight:bold;}
 thead th {background:#c3d9ff;}
 .import_define th, .import_define td{
 float: left;
-min-width: 200px;
-width: auto !important;
+width: 35% !important;
 }
-th,td,caption{padding: 5px 10px;}
+.wrap .maincontent form table tr td.refine_example{
+  color: black;
+}
+th,td,caption{padding: 5px 2%;}
 tr.even td {background:#e5ecf9;}
 tfoot {font-style:italic;}
 caption {background:#eee;}
@@ -83,30 +91,53 @@ caption {background:#eee;}
 label {font-weight:bold;}
 fieldset {padding:1.4em;margin:0 0 1.5em 0;border:1px solid #ccc;}
 legend {font-weight:bold;font-size:16pt;}
-form input[type="text"],input[type="password"], input.text {
-  background: none repeat scroll 0 0 #F2F2F2;
-  border: 1px solid #CCCCCC;
-  border-radius: 8px 8px 8px 8px;
-  font-size: 16pt;
+form input[type="text"],input[type="password"], input.text, input[type="email"], form tr td input[type="tel"] {
+  background-color: #FFFFFF;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  font-size: 120%;
   margin:0 0 5px;
-  height:30px
   padding: 7px 8px;
-  width: 450px;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
+  width: 100%;
 }
-
+table .fieldWithErrors input, table .fieldWithErrors select{
+  border-color: #F66;
+}
+form table:not(.validate_users_list) tr td:nth-child(even){
+  color: #F66;
+  width: 60%;
+}
+form table:not(.validate_users_list) tr td:nth-child(odd):not(.validate_users_list){
+  text-align: right;
+  width: 35%;
+  word-wrap: break-word;
+}
+.new_external_service table, .edit_external_service table{
+  width:80%;
+}
+.wrap form.new_external_service table tr td:nth-child(even), .wrap form.edit_external_service table tr td:nth-child(even){
+  width: 73%;
+}
+.wrap form.new_external_service table tr td:nth-child(odd), .wrap form.edit_external_service table tr td:nth-child(odd){
+  padding-right: 1.25%;
+  width: 22%;
+}
+input#new_roles_{
+  width: 50%;
+}
 input[type="file"] {
-  background: none repeat scroll 0 0 #F2F2F2;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1.45em;
-  width: 450px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
+  color: initial;
 }
-
 input[type="submit"], .login_content span {
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   background: none repeat scroll 0 0 #EEEEED;
   background: -moz-linear-gradient(center bottom , #EEEEED 0%, #EEEEEE 40%, #FFFFFF 100%) repeat scroll 0 0 transparent;
   background: -webkit-gradient(
@@ -117,15 +148,17 @@ input[type="submit"], .login_content span {
   );
   background-image: -o-linear-gradient(top, #FFFFFF, #EEEEED) 0px 0px #EEEEED;
   border: 1px solid #222222;
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
   cursor: pointer;
-  font-size: 18pt;
+  font-size: 140%;
   height: 70px;
-  margin: 20px 0 0;
+  margin: 5px 0 0;
+  max-width: 333px;
   padding: 5px 8px;
-  width: 320px;
-  -moz-border-radius: 8px 8px 8px 8px;
-  -webkit-border-radius: 8px 8px 8px 8px;
+  vertical-align: middle;
+  width: 50%;
 }
 
 input[type="submit"]:hover {
@@ -157,7 +190,9 @@ input[type=checkbox],
 input[type=radio],
 input.checkbox,
 input.radio {
-  margin: 0 5px;position:relative;top:0;
+  margin: 5px;
+  position:relative;
+  top:0;
 }
 
 form.inline {
@@ -190,7 +225,7 @@ form.inline p {
   background: none repeat scroll 0 0 #86B410;
   border: 1px solid #56340E;
   border-radius: 4px 4px 4px 4px;
-  font-size: 14pt;
+  font-size: 130%;
   text-align: center;
   -moz-border-radius: 4px 4px 4px 4px;
   -webkit-border-radius: 4px 4px 4px 4px;

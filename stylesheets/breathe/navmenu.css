@@ -1,8 +1,6 @@
 #navbar_first_level {
   clear: both;
-  float: left;
-  height: 45px;
-  margin: 5px 0 0;
+  margin: 5px 0 -1px;
 }
 
 #navbar_first_level h1 {
@@ -35,7 +33,7 @@
   clear: both;
   color: #4A4D4A;
   float: left;
-  font-size: 8pt;
+  font-size: 85%;
   font-weight: normal;
   height: 35px;
   margin: 0 0 -5px;
@@ -69,7 +67,7 @@ div:not(#navbar_second_level) .wrap:first-of-type {
   float: left;
   height: 30px;
   margin: 0 0 0 5px;
-  min-width: 80px;
+  min-width: 50px;
   padding: 0;
   position: relative;
   text-align: center;
