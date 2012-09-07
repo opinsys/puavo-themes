@@ -109,7 +109,7 @@ table .fieldWithErrors input, table .fieldWithErrors select{
   border-color: #F66;
 }
 form table:not(.validate_users_list) tr td:nth-child(even){
-  color: #F66;
+  color: #FA1414;
   width: 60%;
 }
 form table:not(.validate_users_list) tr td:nth-child(odd):not(.validate_users_list){
@@ -215,7 +215,7 @@ form.inline p {
   border: 1px solid #AAAAAA;
   border-radius: 4px 4px 4px 4px;
   color: #F4F4F4;
-  font-size: 14pt;
+  font-size: 130%;
   text-align: center;
   -moz-border-radius: 4px 4px 4px 4px;
   -webkit-border-radius: 4px 4px 4px 4px;

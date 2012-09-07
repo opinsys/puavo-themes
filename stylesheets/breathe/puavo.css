@@ -239,12 +239,15 @@ h1 {
   #top-menu > li{
     margin-right: 5px;
   }
+  #top-menu > li.organisation-menu-button, #top-menu > li.school-menu-button{
+    margin-right: 7px;
+  }
   #top-menu-right .login_username{
     display: none;
   }
   #top-menu-right li a[onclick]{
     line-height: inherit;
-    margin: -2px 0 0 0;
+    margin: -3px 0 0 0;
     padding: 3px 2px;
     width: 3.25em;
   }
@@ -352,6 +355,7 @@ h1 {
   -webkit-border-radius:6px 6px 0 0;
 }
 .tools a, .tool span{
+  font-size: 111%;
   display: block;
   height: 24px;
   line-height: 1.25;
