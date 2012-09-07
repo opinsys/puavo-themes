@@ -13,20 +13,67 @@ form table:not(.validate_users_list) th, form table:not(.validate_users_list) td
 
 
 @media all and (max-width: 800px) {
-  form table:not(.validate_users_list) th, form table:not(.validate_users_list) td, form table:not(.validate_users_list) caption { 
+   form table:not(.validate_users_list) th, form table:not(.validate_users_list) td, form table:not(.validate_users_list) caption { 
+    float: left;
     display: block !important;
     text-align: left !important;
     width: 95% !important;
   }
-  form tr td input[type="text"], form tr td input[type="password"], form tr td input[type="email"], , form tr td input[type="tel"] {
+  form tr td input[type="text"], form tr td input[type="password"], form tr td input[type="email"], form tr td input[type="tel"], form input[type="text"] {
     width: 95%;
   }
-  form table {
+  form table, .new_external_service table, .edit_external_service table {
     margin: 2%;
     width: 95%;
   }
+  .new_external_service tr td:nth-child(even), .new_external_service tr td:nth-child(odd), .edit_external_service tr:nth-child(even), .edit_external_service tr:nth-child(odd){
+    width: 95% !important;
+  }
   form table:not(.validate_users_list) tr {
     display: block !important;
+    position: relative;
+  }
+  table#autopoweroff th{
+    display: inline-block !important;
+    width: auto !important;
+  } 
+  table#autopoweroff td.checkbox {
+    display: inline-block !important;
+    width: 10% !important;
+    text-align: center !important;
+  }
+  table#autopoweroff td, table#autopoweroff td.label_td {
+    display: inline-block !important;
+    width: 30% !important;
+  }
+  .show_user table.list td{
+    display: inline-block;
+  }
+  .show_user table.list td.value_td{
+    padding-left: 1em;
+  }
+  .show_user table.list td.value_td{
+    text-align: left !important;
+  }
+  .mass_import_info, .mass_import_info_text{
+    padding: 2%;
+  }
+  form[action$="import/validate"] p, form[action$="import/refine"] p, form[action$="import/refine"] pre{
+    padding: 0 0 0 2%;
+  }
+  .mass_import_form input{
+    margin-left: 2%;
+  }
+  textarea#raw_users{
+    margin-left: 2%;
+    width: 90% !important;
+  }
+  .mass_import_form {
+    width: 90% !important;
+  }
+  form table.import_define th, form table.import_define td {
+    width: 45% !important;
+    display: inline-block;
   }
   .submit_button_container{
     margin-left: 2% !important;

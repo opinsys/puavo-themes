@@ -73,11 +73,11 @@ h1 {
     margin: 0;
     width: 98%;
   }
-  .container_wrap{
+  .container_wrap, .login_container{
     border: none !important;
-    margin:0;
-    padding: 0;
-    width: 100%;
+    margin:0 !important;
+    padding: 0 !important;
+    width: 100% !important;
   }
   .wrap{
     border: none !important;
@@ -87,7 +87,7 @@ h1 {
     margin: 0 !important;
     padding-bottom: 2%;
   }
-  .maincontent{
+  .maincontent, .login_content{
     float: none !important;
     margin: 0 !important;
     padding: 0.5% 0 !important;
@@ -144,73 +144,16 @@ h1 {
   .required_info{
     margin-left: 2%;
   }
-  form table:not(.validate_users_list) th, form table:not(.validate_users_list) td, form table:not(.validate_users_list) caption { 
-    display: block !important;
-    text-align: left !important;
-    width: 95% !important;
-  }
-  form tr td input[type="text"], form tr td input[type="password"], form tr td input[type="email"], form tr td input[type="tel"], form input[type="text"] {
-    width: 95%;
-  }
-  form table, .new_external_service table, .edit_external_service table {
-    margin: 2%;
-    width: 95%;
-  }
-  .new_external_service tr td:nth-child(even), .new_external_service tr td:nth-child(odd), .edit_external_service tr:nth-child(even), .edit_external_service tr:nth-child(odd){
-    width: 95% !important;
-  }
-  form table:not(.validate_users_list) tr {
-    display: block !important;
-  }
-  table#autopoweroff th{
-    display: inline-block !important;
-    width: auto !important;
-  } 
-  table#autopoweroff td.checkbox {
-    display: inline-block !important;
-    width: 10% !important;
-    text-align: center !important;
-  }
-  table#autopoweroff td, table#autopoweroff td.label_td {
-    display: inline-block !important;
-    width: 30% !important;
-  }
-  .show_user table.list td{
-    display: inline-block;
-  }
-  .show_user table.list td.value_td{
-    padding-left: 1em;
-  }
-  .show_user table.list td.value_td{
-    text-align: left !important;
-  }
-  .mass_import_info, .mass_import_info_text{
-    padding: 2%;
-  }
-  form[action$="import/validate"] p, form[action$="import/refine"] p, form[action$="import/refine"] pre{
-    padding: 0 0 0 2%;
-  }
-  .mass_import_form input{
-    margin-left: 2%;
-  }
-  textarea#raw_users{
-    margin-left: 2%;
-    width: 90% !important;
-  }
-  .mass_import_form {
-    width: 90% !important;
-  }
-  form table.import_define th, form table.import_define td {
-    width: 45% !important;
-    display: inline-block;
-  }
 } 
 @media screen and (orientation: portrait) and (max-device-width: 800px){
   .container_wrap > h1{
     margin-top: 1.2em !important;
   }
+  div:not(#navbar_second_level) .wrap:first-of-type {
+    margin: 1em 0 0 !important;
+  }
   .maincontent{
-    padding-top: 5% !important;
+    padding-top: 4% !important;
   }
 }
 @media screen and (orientation: landscape) and (max-device-width: 960px){
@@ -291,7 +234,7 @@ h1 {
   border-radius: 0 0 0 10px;
   -moz-border-radius:0 0 0 10px;
   -webkit-border-radius:0 0 0 10px;
-  margin: 5px 0 1em;
+  margin:5px 0 1em;
   /*overflow-y: auto; 
   overflow-x: hidden;*/
   width: 100%;
@@ -652,7 +595,7 @@ background: url("../../images/iconset-breathe.png") no-repeat scroll 5px -915px 
   margin: 1em 0 0;
 }
 
-.login_content input{
+.login_content td input{
 display: block;
 margin: 0 0 0.5em;
 width: auto !important;

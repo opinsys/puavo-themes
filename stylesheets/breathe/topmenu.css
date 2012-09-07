@@ -104,6 +104,7 @@
 }
 #top-menu > li > ul {
   left: -5px;
+  min-width: 200px;
   margin: 0;
   max-height: 400px;
   overflow-y: auto;

@@ -411,13 +411,15 @@ div.colborder {padding-right:24px;margin-right:25px;border-right:1px solid #eee;
 .prepend-top {margin-top:1.5em;}
 .append-bottom {margin-bottom:1.5em;}
 .box {padding:1.5em;margin-bottom:1.5em;background:#E5ECF9;}
-hr {border: medium none;
+div.space,hr {
+  border: medium none;
     clear: both;
     float: none;
     height: 0;
     margin: 0 0 0;
     width: 100%;}
 hr.space {background:#fff;color:#fff;visibility:hidden;}
+
 .clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
 .clearfix, .container {display:block;}
 .clear {clear:both;}
