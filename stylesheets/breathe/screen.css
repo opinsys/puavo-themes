@@ -60,6 +60,17 @@ table.full-width-list{width:100% !important;}
 div.organization{
   width: 80%;
 }
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
 /*table.list{width:auto;}*/
 th {font-weight:bold;}
 thead th {background:#c3d9ff;}
@@ -86,7 +97,7 @@ caption {background:#eee;}
 .last {margin-right:0;padding-right:0;}
 .top {margin-top:0;padding-top:0;}
 .bottom {margin-bottom:0;padding-bottom:0;}
-
+.display_block{display: block !important;}
 /* forms.css */
 label {font-weight:bold;}
 fieldset {padding:1.4em;margin:0 0 1.5em 0;border:1px solid #ccc;}
@@ -133,7 +144,7 @@ input#new_roles_{
 input[type="file"] {
   color: initial;
 }
-input[type="submit"], .login_content span {
+input[type="submit"] {
   cursor: pointer;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
      -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);

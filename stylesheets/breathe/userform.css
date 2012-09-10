@@ -19,7 +19,7 @@ form table:not(.validate_users_list) th, form table:not(.validate_users_list) td
     text-align: left !important;
     width: 95% !important;
   }
-  form tr td input[type="text"], form tr td input[type="password"], form tr td input[type="email"], form tr td input[type="tel"], form input[type="text"] {
+  form tr td input[type="text"], form tr td input[type="password"], form tr td input[type="email"], form tr td input[type="tel"], form input[type="text"], form input[type="password"] {
     width: 95%;
   }
   form table, .new_external_service table, .edit_external_service table {
@@ -80,6 +80,25 @@ form table:not(.validate_users_list) th, form table:not(.validate_users_list) td
   }
   .btn{
     font-size: 100% !important;
+  }
+  form.form_inline{
+    padding: 2% 0;
+  }
+  .form_inline > * {
+    padding: 0 2%;
+  }
+  .form_inline label{
+    display: block;
+    font-size: 120%;
+    text-align: left;
+  }
+  form.form_inline .submit_button_login{
+    margin: 5% 0 0;
+  }
+  form.form_inline input{
+    max-width: 100%;
+    min-height: 50px;
+    width: 98%;
   }
 }
 

@@ -8,9 +8,12 @@ body {
     color-stop(0.35, rgb(242,242,242)),
     color-stop(0.6, rgb(170,170,170))
   );
+  background-image: -webkit-linear-gradient(bottom, #F2F2F2 0%, #AAAAAA 100%);
   background-image: -o-linear-gradient(top,rgb(170,170,170),rgb(242,242,242));
+
   font-family: "Helvetica Neue", Helvetica,Calibri,Arial,sans-serif;
   font-size: 0.8em;
+  height: 100%;
   line-height: 1.5;
   margin: 0;
   overflow-x:hidden;
@@ -129,7 +132,7 @@ h1 {
     width: 100%;
   }
   .message_error, .message_notice, .message_success, .notice, .message_alert{
-    margin: 2% 2.5% 1% 2.5%;
+    margin: 2% 2.5% 1% 2.5% !important;
   }
   .dashboard_box, .user_box, .dashboard_box h3, .show_user h3{
     border-radius: 0 !important;
@@ -440,7 +443,7 @@ table.list td a[href$="automounts"] {
 table.list td a[href$="edit"]:hover,
 table.list td a[onclick]:hover,
 table.list td a[href$="automounts"]:hover {
-  background-color: #BD966A;
+  /*background-color: #BD966A;*/
 }
 tbody a {
   font-weight: bold;
@@ -515,8 +518,9 @@ a:hover {
   -moz-box-shadow: 0 4px 8px #222222;
   -webkit-box-shadow: 0 4px 8px #222222;
   margin: 10% auto;
+  max-width: 1000px;
   padding: 1%;
-  width: 60%;
+  width: 70%;
 }
 
 .login_content {
@@ -594,7 +598,23 @@ background: url("../../images/iconset-breathe.png") no-repeat scroll 5px -915px 
 .login_content form{
   margin: 1em 0 0;
 }
-
+form.form_inline input {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  width: auto;
+}
+.form_inline label{
+  display: inline-block;
+  text-align: right;
+  width: 35%;
+}
+form.form_inline span{
+  margin-bottom: 1%;
+}
+form.form_inline .submit_button_login{
+  margin-left: 36%;
+}
 .login_content td input{
 display: block;
 margin: 0 0 0.5em;
@@ -683,7 +703,7 @@ label {
   color: #222222;
   font-size: 100%;
   font-weight: bold;
-  margin: 0 0 0 2px;
+  margin: 0;
 }
 .label_for_checkbox_list {
     vertical-align: top;
@@ -753,7 +773,7 @@ table.list {
 }
 
 .label_error {
-  color: #AD0000;
+  color: #FA1414;
 }
 .field_error {
   color: #CCCCCC;
@@ -909,7 +929,7 @@ table.list {
   color:#fff;
 }
 .btn-danger:hover{
-  background: #bd362f;
+  background-color: #bd362f;
   color: #ffffff;
   z-index: 999;
 }
