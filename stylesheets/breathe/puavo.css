@@ -705,6 +705,9 @@ label {
   font-weight: bold;
   margin: 0;
 }
+table label{
+  margin: 0 0 0 2px;
+}
 .label_for_checkbox_list {
     vertical-align: top;
 }
