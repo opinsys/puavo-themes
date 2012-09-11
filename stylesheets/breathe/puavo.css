@@ -1002,6 +1002,7 @@ label.checkbox {
 }
 .search_result td {
   border-bottom: 1px solid #AAAAAA;
+  width: 33.333%;
 }
 .search_result th {
   background: none repeat scroll 0 0 #A36A2A;
@@ -1035,10 +1036,6 @@ textarea#raw_users{
 }
 .mass_import_form{
   width:460px;
-}
-#jquery-live-search{
-  position: fixed !important;
-  top:35px !important;
 }
 
 table#autopoweroff td {
