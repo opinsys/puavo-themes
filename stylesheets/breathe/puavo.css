@@ -119,8 +119,9 @@ h1 {
   div:not(#navbar_second_level) .wrap:first-of-type .maincontent{ 
     margin: 3% 0 0;
   }
-  .maincontent h1{
+  .maincontent > h1{
     font-size: 180% !important;
+    padding: 1.5% 0 0 1.5% !important;
   }
   .maincontent .dashboard{
     width: 100%;
@@ -134,9 +135,6 @@ h1 {
   }
   .dashboard_box h3, .show_user h3{
     padding:1.5%;
-  }
-  .maincontent h1{
-    padding: 1.5% 0 0 1.5% !important;
   }
   div.organization{
     width: 100%;
@@ -166,6 +164,9 @@ h1 {
   }
   p.pdf_info{
     font-size: 115%;
+  }
+  .responsive_padding2{
+    padding: 2%;
   }
 } 
 @media screen and (orientation: portrait) and (max-device-width: 800px){
@@ -314,6 +315,9 @@ h1 {
   -moz-border-radius:6px 6px 0 0;
   -webkit-border-radius:6px 6px 0 0;
 }
+/*.devices.tools > div:hover{
+  background-color: transparent;
+}*/
 .tools a, .tool span{
   font-size: 111%;
   display: block;
@@ -382,9 +386,8 @@ h1 {
 .wrap .tools a[href$="rename_groups/new"] {
 background: url("../../images/iconset-breathe.png") no-repeat scroll left -150px transparent;
 }
-.tools a[href$="select_school"]:hover,
-.wrap .tools a[href$="rename_groups/new"]:hover {
-    background: url("../../images/iconset-breathe.png") no-repeat scroll left -190px transparent;
+.tools a[href$="automounts"], .tools a[href$="automounts/new"]{
+background: url("../../images/iconset-breathe.png") no-repeat scroll left -710px transparent;
 }
 .tools .videolink {
   background: url("../../images/iconset-breathe.png") no-repeat scroll left -235px transparent;
@@ -412,6 +415,13 @@ background: url("../../images/iconset-breathe.png") no-repeat scroll left -150px
 .tools a[href$="roles/new"]:hover,
 .tools a[href$="groups/new"]:hover {
     background: url("../../images/iconset-breathe.png") no-repeat scroll left -430px transparent;
+}
+.tools a[href$="automounts"]:hover, .tools a[href$="automounts/new"]:hover{
+background: url("../../images/iconset-breathe.png") no-repeat scroll left -750px transparent;
+}
+.tools a[href$="select_school"]:hover,
+.wrap .tools a[href$="rename_groups/new"]:hover {
+    background: url("../../images/iconset-breathe.png") no-repeat scroll left -190px transparent;
 }
 .tools a[href$="import/new"] {
     background: url("../../images/iconset-breathe.png") no-repeat scroll left -470px transparent;

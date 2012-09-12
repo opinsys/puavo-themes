@@ -33,6 +33,9 @@ form table:not(.validate_users_list) th, form table:not(.validate_users_list) td
     display: block !important;
     position: relative;
   }
+  .label_td.view{
+    width:35%;
+  }
   table#autopoweroff th{
     display: inline-block !important;
     width: auto !important;
@@ -100,6 +103,9 @@ form table:not(.validate_users_list) th, form table:not(.validate_users_list) td
     min-height: 50px;
     width: 98%;
   }
+  form.new_device h2, form.edit_device h2, form.edit_server h2{
+    padding: 0 2%;
+  }
 }
 
 form table:not(.validate_users_list) tr {
@@ -159,4 +165,8 @@ form[action$="users/import"] .submit_button_container{
 #device_macAddress input,
 #server_puavoExport_list input {
   display: block;
+}
+
+.purchase_date select {
+  width: auto;
 }
