@@ -69,6 +69,19 @@ h1 {
   #top-menu-right li:last-of-type{
     line-height: 1.75;
   }
+   #top-menu-right li a[onclick] {
+    background: url("../../images/iconset-breathe.png") no-repeat scroll center -953px #AD0000;
+    text-indent: -9999px;
+  }
+    #top-menu-right li a[onclick]:hover{
+    background: url("../../images/iconset-breathe.png") no-repeat scroll center -953px #DA0000;
+  }
+  #top-menu-right li a[onclick]{
+    line-height: inherit;
+    margin: -3px 0 0 0;
+    padding: 3px 2px;
+    width: 3.25em;
+  }
   ul.menu li.login_username_description{
     display: none;
   }
@@ -147,6 +160,13 @@ h1 {
   .required_info{
     margin-left: 2%;
   }
+  .pdf_info{
+    margin: 0;
+    padding: 2%;
+  }
+  p.pdf_info{
+    font-size: 115%;
+  }
 } 
 @media screen and (orientation: portrait) and (max-device-width: 800px){
   .container_wrap > h1{
@@ -190,12 +210,6 @@ h1 {
   }
   #top-menu-right .login_username{
     display: none;
-  }
-  #top-menu-right li a[onclick]{
-    line-height: inherit;
-    margin: -3px 0 0 0;
-    padding: 3px 2px;
-    width: 3.25em;
   }
   #top-menu-right li a[onclick] {
     background: url("../../images/iconset-breathe.png") no-repeat scroll center -955px #AD0000;
