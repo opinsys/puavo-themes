@@ -251,7 +251,7 @@ li.top-menu-item:last-child {
 .topNavContentContainer,
 .footer_wrap {
   margin: 0 auto;
-  max-width: 980px;
+  max-width: 1200px;
   width:90%;
 }
 #top-menu .last_one,
