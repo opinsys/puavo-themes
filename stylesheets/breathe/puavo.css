@@ -315,9 +315,9 @@ h1 {
   -moz-border-radius:6px 6px 0 0;
   -webkit-border-radius:6px 6px 0 0;
 }
-/*.devices.tools > div:hover{
+.devices.tools > div.add_new_device_select_container:hover{
   background-color: transparent;
-}*/
+}
 .tools a, .tool span{
   font-size: 111%;
   display: block;
@@ -386,8 +386,11 @@ h1 {
 .wrap .tools a[href$="rename_groups/new"] {
 background: url("../../images/iconset-breathe.png") no-repeat scroll left -150px transparent;
 }
-.tools a[href$="automounts"], .tools a[href$="automounts/new"]{
+.tools a[href$="automounts"]:not(.automount_back), .tools a[href$="automounts/new"]{
 background: url("../../images/iconset-breathe.png") no-repeat scroll left -710px transparent;
+}
+.tools a.automount_back{
+  background: url("../../images/iconset-breathe.png") no-repeat scroll left -988px transparent;
 }
 .tools .videolink {
   background: url("../../images/iconset-breathe.png") no-repeat scroll left -235px transparent;
@@ -416,8 +419,11 @@ background: url("../../images/iconset-breathe.png") no-repeat scroll left -710px
 .tools a[href$="groups/new"]:hover {
     background: url("../../images/iconset-breathe.png") no-repeat scroll left -430px transparent;
 }
-.tools a[href$="automounts"]:hover, .tools a[href$="automounts/new"]:hover{
+.tools a[href$="automounts"]:hover:not(.automount_back), .tools a[href$="automounts/new"]:hover{
 background: url("../../images/iconset-breathe.png") no-repeat scroll left -750px transparent;
+}
+.tools a.automount_back:hover{
+  background: url("../../images/iconset-breathe.png") no-repeat scroll left -1028px transparent;
 }
 .tools a[href$="select_school"]:hover,
 .wrap .tools a[href$="rename_groups/new"]:hover {
@@ -461,7 +467,7 @@ table.list td a[onclick],
 table.list td a[href$="automounts"] {
   float: left;
   margin: 0;
-  padding: 2px 4px;
+  padding: 3% 6%;
   text-align: center;
 }
 table.list td a[href$="edit"]:hover,
