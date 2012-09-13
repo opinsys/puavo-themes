@@ -467,7 +467,7 @@ table.list td a[onclick],
 table.list td a[href$="automounts"] {
   float: left;
   margin: 0;
-  padding: 3% 6%;
+  padding: 3px 6px;
   text-align: center;
 }
 table.list td a[href$="edit"]:hover,
