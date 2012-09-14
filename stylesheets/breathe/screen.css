@@ -62,14 +62,14 @@ div.organization{
 }
 .clearfix {
   *zoom: 1;
-  &:before,
-  &:after {
-    display: table;
-    content: "";
-  }
-  &:after {
-    clear: both;
-  }
+}
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: "";
+}
+.clearfix::after {
+  clear: both;
 }
 /*table.list{width:auto;}*/
 th {font-weight:bold;}
