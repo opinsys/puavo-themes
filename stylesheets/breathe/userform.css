@@ -114,6 +114,9 @@ table.new_groups_table tr td{
   form table.rename_groups_roles_table tr th, form table.rename_groups_roles_table tr td{
     width: 45% !important;
   }
+  #other_groups td, #member_groups td{
+    line-height: 3;
+  }
 }
 
 form table:not(.validate_users_list) tr {
