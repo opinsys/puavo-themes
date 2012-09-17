@@ -711,8 +711,8 @@ select {
   font-weight: normal;
   height: 30px;
   margin: 0 0 5px;
-  padding: .2em 0;
-  width: 100%;
+  padding: 0.2em 0;
+  width: 95%;
 }
 .required > .fieldWithErrors{
   display: inline;

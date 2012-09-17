@@ -10,7 +10,12 @@ form table:not(.validate_users_list) th, form table:not(.validate_users_list) td
 .rename_group_new_name{
   width: 60%;
 }
-
+.rename_group_name_abbr{
+  width: 45%;
+}
+table.new_groups_table tr td{
+  text-align: left !important;
+}
 
 @media all and (max-width: 800px) {
    form table:not(.validate_users_list) th, form table:not(.validate_users_list) td, form table:not(.validate_users_list) caption { 
@@ -106,6 +111,9 @@ form table:not(.validate_users_list) th, form table:not(.validate_users_list) td
   form.new_device h2, form.edit_device h2, form.edit_server h2{
     padding: 0 2%;
   }
+  form table.rename_groups_roles_table tr th, form table.rename_groups_roles_table tr td{
+    width: 45% !important;
+  }
 }
 
 form table:not(.validate_users_list) tr {
@@ -121,8 +129,7 @@ form table.rename_groups_table tr{
 }
 form table.new_groups_table tr td{
   float: left !important;
-  width: 50% !important;
-  margin-right: 1em;
+  width: 45% !important;
 }
 form table.validate_users_list tr{
   margin: 0 0 10px;

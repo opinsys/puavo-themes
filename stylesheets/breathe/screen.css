@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#2D2D2D;}
 h1 {font-size:3em;line-height:1;margin-bottom:0.5em;}
 h2 {font-size: 2em;margin-bottom: 0.75em;}
 h3 {font-size:1.3em;line-height:1;margin-bottom:1em;}
-h4 {font-size:1.15em;line-height:1.25;margin-bottom:1.25em;}
+h4 {font-size:1.15em;line-height:1.25;margin:1% 0;}
 h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
 h6 {font-size:1em;font-weight:bold;}
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
@@ -114,7 +114,7 @@ form input[type="text"],input[type="password"], input.text, input[type="email"],
   font-size: 120%;
   margin:0 0 5px;
   padding: 7px 8px;
-  width: 100%;
+  width: 90%;
 }
 table .fieldWithErrors input, table .fieldWithErrors select{
   border-color: #F66;
@@ -137,9 +137,6 @@ form table:not(.validate_users_list) tr td:nth-child(odd):not(.validate_users_li
 .wrap form.new_external_service table tr td:nth-child(odd), .wrap form.edit_external_service table tr td:nth-child(odd){
   padding-right: 1.25%;
   width: 22%;
-}
-input#new_roles_{
-  width: 50%;
 }
 input[type="file"] {
   color: initial;
