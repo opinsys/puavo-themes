@@ -936,7 +936,7 @@ table.list {
   -webkit-border-radius: 2px 2px 2px 2px;
   font-size: 90%;
   font-weight: normal;
-  padding: 5px 10px;
+  padding: 4px 8px;
   text-align: center;
   text-decoration: none;
 }
@@ -979,7 +979,8 @@ table.list {
 .row .admin_display_name{
   display: inline-block;
   float:none;
-  width:80%;
+  max-width: 70%;
+  width:auto;
 }
 #admin_users_list{
   max-width:905px;
