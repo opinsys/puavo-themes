@@ -1072,7 +1072,6 @@ textarea#raw_users{
 table#autopoweroff td {
   display: table-cell;
   text-align: left;
-  width: auto;
 }
 
 table#autopoweroff td.label_td {
@@ -1082,7 +1081,9 @@ table#autopoweroff td.label_td {
 table#autopoweroff td.label_td label {
   font-weight: normal;
 }
-
+table#autopoweroff td select{
+  width: auto;
+}
 .notice_text {
   color:#FF6666;
 }
