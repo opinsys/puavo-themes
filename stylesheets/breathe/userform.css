@@ -50,10 +50,6 @@ table.new_groups_table tr td{
     width: 10% !important;
     text-align: center !important;
   }
-  table#autopoweroff td, table#autopoweroff td.label_td {
-    display: inline-block !important;
-    width: 30% !important;
-  }
   .show_user table.list td{
     display: inline-block;
   }
@@ -116,6 +112,12 @@ table.new_groups_table tr td{
   }
   #other_groups td, #member_groups td{
     line-height: 3;
+  }
+  table#autopoweroff td table{
+    width: 95%;
+  }
+  table#autopoweroff td table td{
+    width: 30% !important;
   }
 }
 
