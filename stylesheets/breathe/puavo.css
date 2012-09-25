@@ -412,18 +412,15 @@ background: url("../../images/iconset-breathe.png") no-repeat scroll left -710px
 .tools a[href$="groups/new"] {
     background: url("../../images/iconset-breathe.png") no-repeat scroll left -390px transparent;
 }
+.tools a#select_change_school_users{
+  background: url("../../images/iconset-breathe.png") no-repeat scroll left -1075px transparent; 
+}
 .tools a[href$="users/new"]:hover,
 .tools a[href$="external_services/new"]:hover,
 .tools a[href$="schools/new"]:hover,
 .tools a[href$="roles/new"]:hover,
 .tools a[href$="groups/new"]:hover {
     background: url("../../images/iconset-breathe.png") no-repeat scroll left -430px transparent;
-}
-.tools a[href$="automounts"]:hover:not(.automount_back), .tools a[href$="automounts/new"]:hover{
-background: url("../../images/iconset-breathe.png") no-repeat scroll left -750px transparent;
-}
-.tools a.automount_back:hover{
-  background: url("../../images/iconset-breathe.png") no-repeat scroll left -1028px transparent;
 }
 .tools a[href$="select_school"]:hover,
 .wrap .tools a[href$="rename_groups/new"]:hover {
@@ -441,6 +438,15 @@ background: url("../../images/iconset-breathe.png") no-repeat scroll left -750px
 .tool span:hover {
     background: url("../../images/iconset-breathe.png") no-repeat scroll left -670px transparent;
     cursor:pointer;
+}
+.tools a[href$="automounts"]:hover:not(.automount_back), .tools a[href$="automounts/new"]:hover{
+background: url("../../images/iconset-breathe.png") no-repeat scroll left -750px transparent;
+}
+.tools a.automount_back:hover{
+  background: url("../../images/iconset-breathe.png") no-repeat scroll left -1028px transparent;
+}
+.tools a#select_change_school_users:hover{
+  background: url("../../images/iconset-breathe.png") no-repeat scroll left -1115px transparent; 
 }
 a[href*="import/download.pdf"] {
   color: #F44000;
@@ -1011,6 +1017,9 @@ table.list {
 td.action {
   border: medium none;
 }
+.validate_users_list .change_school_info{
+  margin: 0 0 0 3px;
+}
 .destroy {
   color: #A13;
   display: none;
@@ -1029,6 +1038,7 @@ label.checkbox {
   font-size: 100%;
   font-weight: normal;
 }
+.validate_users_list label.checkbox  ~ input[type="checkbox"]{display:block;}
 .search_result td {
   border-bottom: 1px solid #AAAAAA;
   width: 33.333%;
