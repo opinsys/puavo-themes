@@ -225,6 +225,7 @@ li.top-menu-item:last-child {
   box-shadow: 2px 4px 6px rgba(68, 68, 68, 0.80);
   height: auto;
   margin: 0;
+  min-width: 355px;
   position: fixed;
   top:0;
   width: 100%;

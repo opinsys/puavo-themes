@@ -30,6 +30,7 @@ h1 {
 #container{
   height: 100%;
   margin:0;
+  min-width: 355px;
 }
 .container_wrap {
   background: none repeat scroll 0 0 #E4E4E4;
@@ -160,7 +161,6 @@ h1 {
   }
   .pdf_info{
     margin: 0;
-    padding: 2%;
   }
   p.pdf_info{
     font-size: 115%;
@@ -436,12 +436,10 @@ background: url("../../images/iconset-breathe.png") no-repeat scroll left -750px
     background: url("../../images/iconset-breathe.png") no-repeat scroll left -510px transparent;
 }
 .tool span {
-    background: url("../../images/iconset-breathe.png") no-repeat scroll center -630px transparent;
-    font-size: 0;
-    text-indent: -9999px;
+    background: url("../../images/iconset-breathe.png") no-repeat scroll left -630px transparent;
 }
 .tool span:hover {
-    background: url("../../images/iconset-breathe.png") no-repeat scroll center -670px transparent;
+    background: url("../../images/iconset-breathe.png") no-repeat scroll left -670px transparent;
     cursor:pointer;
 }
 a[href*="import/download.pdf"] {
@@ -467,9 +465,9 @@ table.list td a[onclick],
 table.list td a[href$="automounts"] {
   float: left;
   margin: 0;
-  max-width: 100%;
-  padding: 3px 6px;
+  padding: 4px 2px;
   text-align: center;
+  width: 100%;
 }
 table.list td a[href$="edit"]:hover,
 table.list td a[onclick]:hover,
