@@ -22,14 +22,14 @@ table.new_groups_table tr td{
     float: left;
     display: block !important;
     text-align: left !important;
-    width: 95% !important;
+    width: 100% !important;
   }
   form tr td input[type="text"], form tr td input[type="password"], form tr td input[type="email"], form tr td input[type="tel"], form input[type="text"], form input[type="password"] {
     width: 95%;
   }
   form table, .new_external_service table, .edit_external_service table {
     margin: 2%;
-    width: 95%;
+    width: 100%;
   }
   .new_external_service tr td:nth-child(even), .new_external_service tr td:nth-child(odd), .edit_external_service tr:nth-child(even), .edit_external_service tr:nth-child(odd){
     width: 95% !important;

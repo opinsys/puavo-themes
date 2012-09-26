@@ -221,11 +221,10 @@ li.top-menu-item:last-child {
     color-stop(0.80, rgb(250,179,46))
   );
   background-image: -o-linear-gradient(top,rgb(250,179,46),rgb(245,149,69));
-
   box-shadow: 2px 4px 6px rgba(68, 68, 68, 0.80);
   height: auto;
   margin: 0;
-  min-width: 355px;
+  min-width: 325px;
   position: fixed;
   top:0;
   width: 100%;

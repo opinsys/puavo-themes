@@ -1,3 +1,8 @@
+* { 
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+ }
 body {
   background: none repeat scroll 0 0 #E3E3D9;
   background:-moz-linear-gradient(center bottom , #F2F2F2 35%, #AAAAAA 60%) repeat-x scroll 0 0 transparent;
@@ -12,25 +17,23 @@ body {
   background-image: -o-linear-gradient(top,rgb(170,170,170),rgb(242,242,242));
 
   font-family: "Helvetica Neue", Helvetica,Calibri,Arial,sans-serif;
-  font-size: 0.8em;
+  font-size: 80%;
   height: 100%;
   line-height: 1.5;
   margin: 0;
-  overflow-x:hidden;
   padding: 0;
-  position: absolute;
   width: 100%;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 250%;
   margin: 10px 0 0.5em;
 }
 
 #container{
   height: 100%;
   margin:0;
-  min-width: 355px;
+  min-width: 325px;
 }
 .container_wrap {
   background: none repeat scroll 0 0 #E4E4E4;
@@ -58,7 +61,7 @@ h1 {
   .topNavContainer{
     display: block;
     height: 2.7em;
-    position: static;
+    position: relative;
   }
   .topNavContentContainer{
     width: 95%;
@@ -252,15 +255,13 @@ h1 {
   border-radius: 0 0 0 10px;
   -moz-border-radius:0 0 0 10px;
   -webkit-border-radius:0 0 0 10px;
-  margin:5px 0 1em;
-  /*overflow-y: auto; 
-  overflow-x: hidden;*/
+  margin:0 0 1em;
   width: 100%;
 }
 .container_wrap > h1 {
   font-size: 250%;
   font-variant: small-caps;
-  margin: 10px 10px 0;
+  margin: 10px 0 0 10px;
 }
 .logo{
   float: right;
@@ -321,10 +322,10 @@ h1 {
 .tools a, .tool span{
   font-size: 111%;
   display: block;
-  height: 24px;
+  height: auto;
   line-height: 1.25;
   margin: 0;
-  padding: 15px 10px 5px 35px;
+  padding: 15px 10px 15px 35px;
   white-space: nowrap;
   width: auto;
 }
@@ -552,9 +553,9 @@ a:hover {
   box-shadow: 0 4px 8px #222222;
   -moz-box-shadow: 0 4px 8px #222222;
   -webkit-box-shadow: 0 4px 8px #222222;
-  margin: 10% auto;
+  margin: 0 auto;
   max-width: 1000px;
-  padding: 1%;
+  padding: 10px;
   width: 70%;
 }
 
