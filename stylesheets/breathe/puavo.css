@@ -473,7 +473,7 @@ table.list td a[href$="automounts"] {
   margin: 0;
   padding: 4px 2px;
   text-align: center;
-  width: 100%;
+  width: 90%;
 }
 table.list td a[href$="edit"]:hover,
 table.list td a[onclick]:hover,
@@ -1003,7 +1003,7 @@ table.list {
   border-collapse: collapse;
   width: 100%;
 }
-.validate_users_list td {
+.validate_users_list td:not(.action) {
   border: 1px solid black;
   overflow: hidden;
 }
