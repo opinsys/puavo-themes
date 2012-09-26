@@ -81,7 +81,7 @@ width: 35% !important;
 .wrap .maincontent form table tr td.refine_example{
   color: black;
 }
-th,td,caption{padding: 5px 2%;}
+th,td,caption{padding: 5px 1%;}
 tr.even td {background:#e5ecf9;}
 tfoot {font-style:italic;}
 caption {background:#eee;}
