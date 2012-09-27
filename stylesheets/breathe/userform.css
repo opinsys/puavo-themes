@@ -45,10 +45,6 @@ table.new_groups_table tr td{
     display: inline-block !important;
     width: auto !important;
   } 
-  table#autopoweroff td {
-    display: inline !important;
-    width: auto !important;
-  }
   table#autopoweroff td.checkbox {
     display: inline-block !important;
     width: 10% !important;
