@@ -49,9 +49,9 @@ padding-right: 2px;
     left: 0 !important;
     max-width: 100%;
     position: absolute;
-    width: 98%;
+    width: 100%;
   }
   fieldset.search_result{
-    width: 97%;
+    width: 100%;
   }
 }

@@ -224,7 +224,7 @@ li.top-menu-item:last-child {
   box-shadow: 2px 4px 6px rgba(68, 68, 68, 0.80);
   height: auto;
   margin: 0;
-  min-width: 325px;
+  min-width: 315px;
   position: fixed;
   top:0;
   width: 100%;
@@ -234,16 +234,16 @@ li.top-menu-item:last-child {
 }
 
 .topNavContainer input {
-  background: url("../../images/magnifier.png") no-repeat scroll 95% 3px #FFFFFF;
+  background: url("../../images/magnifier.png") no-repeat scroll 95% center #FFFFFF;
   border: 1px solid #AAAAAA;
   border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
   box-shadow: 0 1px 0 #FAB32E;
   float: left;
   margin: 5px 0 0 5px !important;
   padding: 5px 30px 5px 10px;
-  width: 13em;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
+  width: 15em;
 }
 .topNavContainer input.loading {
   background: url("../../images/ajax-loader.gif") no-repeat scroll 95% 4px #FFFFFF !important;

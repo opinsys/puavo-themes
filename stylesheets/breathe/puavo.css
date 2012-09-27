@@ -33,7 +33,7 @@ h1 {
 #container{
   height: 100%;
   margin:0;
-  min-width: 325px;
+  min-width: 315px;
 }
 .container_wrap {
   background: none repeat scroll 0 0 #E4E4E4;
@@ -49,199 +49,18 @@ h1 {
   -moz-box-shadow: 0px 15px 15px rgba(68, 68, 68, 0.70);
   -webkit-box-shadow: 0px 15px 15px rgba(68, 68, 68, 0.70);
 }
-@media all and (max-width: 800px) {
-  #navbar_second_level, .container_wrap{
-    border-radius:0;
-    -moz-border-radius:0;
-    -webkit-border-radius:0;
-  }
-  body{
-    font-size: 72.777% !important;
-  }
-  .topNavContainer{
-    display: block;
-    height: 2.7em;
-    position: relative;
-  }
-  .topNavContentContainer{
-    width: 95%;
-  }
-  .topNavContainer input{
-    margin-top: 3% !important;
-    width: 10em;
-  }
-  #top-menu-right li:last-of-type{
-    line-height: 1.75;
-  }
-   #top-menu-right li a[onclick] {
-    background: url("../../images/iconset-breathe.png") no-repeat scroll center -953px #AD0000;
-    text-indent: -9999px;
-  }
-    #top-menu-right li a[onclick]:hover{
-    background: url("../../images/iconset-breathe.png") no-repeat scroll center -953px #DA0000;
-  }
-  #top-menu-right li a[onclick]{
-    line-height: inherit;
-    margin: -3px 0 0 0;
-    padding: 3px 2px;
-    width: 3.25em;
-  }
-  ul.menu li.login_username_description{
-    display: none;
-  }
-  .login_container{
-    margin: 0;
-    width: 98%;
-  }
-  .container_wrap, .login_container{
-    border: none !important;
-    margin:0 !important;
-    padding: 0 !important;
-    width: 100% !important;
-  }
-  .wrap{
-    border: none !important;
-    border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    -webkit-border-radius: 0 !important;
-    margin: 0 !important;
-    padding-bottom: 2%;
-  }
-  .maincontent, .login_content{
-    float: none !important;
-    margin: 0 !important;
-    padding: 0.5% 0 !important;
-    position: relative;
-    width: 100% !important;
-  }
-  .content_wrapper{
-    padding: 2%;
-  }
-  .maincontent .content_wrapper h1{
-    padding-left: 0 !important;
-  }
-  div:not(#navbar_second_level) .wrap:first-of-type .maincontent{ 
-    margin: 3% 0 0;
-  }
-  .maincontent > h1{
-    font-size: 180% !important;
-    padding: 1.5% 0 0 1.5% !important;
-  }
-  .maincontent .dashboard{
-    width: 100%;
-  }
-  .container_wrap > h1{
-    margin-top: 0 !important;
-    padding-top: 1%;
-  }
-  .dashboard_box.school_image{
-    padding-left: 1.5%;
-  }
-  .dashboard_box h3, .show_user h3{
-    padding:1.5%;
-  }
-  div.organization{
-    width: 100%;
-  }
-  table.list{
-    width: 100%;
-  }
-  .message_error, .message_notice, .message_success, .notice, .message_alert{
-    margin: 2% 2.5% 1% 2.5% !important;
-  }
-  .dashboard_box, .user_box, .dashboard_box h3, .show_user h3{
-    border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    -webkit-border-radius: 0 !important;
-    margin:0 !important;
-    width: 100% !important;
-  }
-  #this_school_admin_users .row, #other_admin_users .row{
-    padding: 1% 2% !important;
-  }
-  .required_info{
-    margin-left: 2%;
-  }
-  .pdf_info{
-    margin: 0;
-  }
-  p.pdf_info{
-    font-size: 115%;
-  }
-  .responsive_padding2{
-    padding: 2%;
-  }
-} 
-@media screen and (orientation: portrait) and (max-device-width: 800px){
-  .container_wrap > h1{
-    margin-top: 1.2em !important;
-  }
-  div:not(#navbar_second_level) .wrap:first-of-type {
-    margin: 1em 0 0 !important;
-  }
-  .maincontent{
-    padding-top: 4% !important;
-  }
-}
-@media screen and (orientation: landscape) and (max-device-width: 960px){
-  div:not(#navbar_second_level) .wrap:first-of-type {
-    margin: 2em 0 0 !important;
-  }
-  .container_wrap{
-    margin: 3em 0 0 !important;
-  }
-}
-@media screen and (orientation: portrait) and (max-device-width: 540px){
-  div:not(#navbar_second_level) .wrap:first-of-type {
-    margin: 1em 0 0 !important;
-  }
-  .container_wrap{
-    margin: 3em 0 0 !important;
-  }
-}
-@media all and (max-width:540px){
-  body{
-    font-size: 65% !important;
-  }
-  #top-menu{
-    padding: 0;
-  }
-  #top-menu > li{
-    margin-right: 5px;
-  }
-  #top-menu > li.organisation-menu-button, #top-menu > li.school-menu-button{
-    margin-right: 7px;
-  }
-  #top-menu-right .login_username{
-    display: none;
-  }
-  #top-menu-right li a[onclick] {
-    background: url("../../images/iconset-breathe.png") no-repeat scroll center -955px #AD0000;
-    text-indent: -9999px;
-  }
-  #top-menu-right li a[onclick]:hover{
-    background: url("../../images/iconset-breathe.png") no-repeat scroll center -955px #DA0000;
-  }
-  .container_wrap > h1{
-    margin-top: 0 !important;
-  }
-  .mass_import_info span {
-    display: block;
-  }
-  img{
-    max-width: 97.5%;
-  }
-}
+
 .maincontent {
   float: left;
   margin: 1% 0 0 2%;
   padding: 0 0 10px;
+  position: relative;
   width: 95%;
 }
 .maincontent h1 {
   font-size: 220%;
   line-height: 1.2em;
-  margin: 0 0 10px;
+  margin: 0 0 2%;
   padding: 0;
 }
 .maincontent h1 span {
@@ -261,7 +80,8 @@ h1 {
 .container_wrap > h1 {
   font-size: 250%;
   font-variant: small-caps;
-  margin: 10px 0 0 10px;
+  margin: 0;
+  padding: 1% 0 0 0;
 }
 .logo{
   float: right;
@@ -279,14 +99,14 @@ h1 {
   color:#FF6666;
   font-size:12pt;
 }
-.tools > li, .tools > div {
+.tools_ul > li, .tools > div {
   border-bottom: 1px dashed #ECEADA;
   float: left;
   margin: 0;
   padding: 0 0 0 5px;
   position: relative;
 }
-.tools > li.tool{padding:0 1em;}
+.tools_ul > li.tool{padding:0 1em;}
 .tools .tool ul{
   display: none;
 }
@@ -309,7 +129,7 @@ h1 {
   background:none repeat scroll 0 0 #C0772F;
 }
 
-.tools > li:hover,
+.tools_ul > li:hover,
 .tools > div:hover {
   background:none repeat scroll 0 0 #C0772F;
   border-radius:6px 6px 0 0;
@@ -320,7 +140,7 @@ h1 {
   background-color: transparent;
 }
 .tools a, .tool span{
-  font-size: 111%;
+  font-size: 120%;
   display: block;
   height: auto;
   line-height: 1.25;
@@ -353,13 +173,15 @@ h1 {
   color: #AA1133;
   font-weight: bold;
 }
-.tools {
+.tools_ul, .tools{
   border-color: #222222;
   border-style: solid;
-  float: right;
-  font-size: 90%;
   margin: 5px 1em .2em;
   padding: 0;
+}
+.tools {
+  font-size: 90%;
+  float: right;
 }
 .cancel {
   display:inline;
@@ -474,7 +296,7 @@ table.list td a[href$="automounts"] {
   margin: 0;
   padding: 4px 2px;
   text-align: center;
-  width: 90%;
+  width: 60%;
 }
 table.list td a[href$="edit"]:hover,
 table.list td a[onclick]:hover,
@@ -686,24 +508,6 @@ margin: 0;
 .password_container .login_content table tr td input{
   width: 100% !important;
 }
-@media all and (min-width:890px){
-  .password_container .login_content table tr td:nth-of-type(2n){
-    width:430px;
-  }
-  .password_container .login_content table tr:last-of-type td {
-      float: none;
-      margin: 0 75px 0 230px;
-      width:440px;
-  }
-}
-@media all and (max-width:890px) {
-  .password_container .login_content table tr td:nth-of-type(2n){
-    float:none;
-  }
-  .password_container .login_content table{
-    width:100%;
-  }
-}
 
 input {
   font-weight: normal;
@@ -739,6 +543,7 @@ label {
   color: #222222;
   font-size: 100%;
   font-weight: bold;
+  line-height: 2;
   margin: 0;
 }
 td > label{
@@ -1082,7 +887,6 @@ table#autopoweroff td {
   display: table-cell;
   text-align: left;
 }
-
 table#autopoweroff td.label_td {
   padding-top: 20px;
 }
@@ -1106,4 +910,217 @@ table#autopoweroff td select{
   background-image: url(../../images/show-more.png);
   background-repeat: no-repeat;
   background-position: right;
+}
+/* 
+
+Responsive styles 
+
+*/
+@media all and (max-width: 800px) {
+  #navbar_second_level, .container_wrap{
+    border-radius:0;
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+  }
+  body{
+    font-size: 72.777% !important;
+  }
+  .topNavContainer{
+    display: block;
+    height: 2.7em;
+    position: relative;
+  }
+  .topNavContentContainer{
+    width: 95%;
+  }
+  .topNavContainer input{
+    margin-top: 3% !important;
+    width: 13em;
+  }
+  #top-menu-right li:last-of-type{
+    line-height: 1.75;
+  }
+   #top-menu-right li a[onclick] {
+    background: url("../../images/iconset-breathe.png") no-repeat scroll center -953px #AD0000;
+    text-indent: -9999px;
+  }
+    #top-menu-right li a[onclick]:hover{
+    background: url("../../images/iconset-breathe.png") no-repeat scroll center -953px #DA0000;
+  }
+  #top-menu-right li a[onclick]{
+    line-height: inherit;
+    margin: -3px 0 0 0;
+    padding: 3px 2px;
+    width: 3.25em;
+  }
+  ul.menu li.login_username_description{
+    display: none;
+  }
+  .login_container{
+    margin: 0;
+    width: 98%;
+  }
+  .container_wrap, .login_container{
+    border: none !important;
+    margin:0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  .wrap{
+    border: none !important;
+    border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    margin: 0 !important;
+    padding-bottom: 2%;
+  }
+  .maincontent, .login_content{
+    float: none !important;
+    margin: 0 !important;
+    padding: 0.5% 0 !important;
+    width: 100% !important;
+  }
+  .content_wrapper{
+    padding: 2%;
+  }
+  .maincontent .content_wrapper h1{
+    padding-left: 0 !important;
+  }
+  div:not(#navbar_second_level) .wrap:first-of-type .maincontent{ 
+    margin: 3% 0 0;
+  }
+  .maincontent > h1{
+    font-size: 180% !important;
+    padding: 1.5% 0 0 1.5% !important;
+  }
+  .maincontent .dashboard{
+    width: 100%;
+  }
+  .container_wrap > h1{
+    margin-top: 0 !important;
+    padding: 1% 0 0 1%;
+  }
+  .dashboard_box.school_image{
+    padding-left: 1.5%;
+  }
+  .dashboard_box h3, .show_user h3{
+    padding:1.5%;
+  }
+  div.organization{
+    width: 100%;
+  }
+  table.list{
+    width: 100%;
+  }
+  .message_error, .message_notice, .message_success, .notice, .message_alert{
+    margin: 2% 2.5% 1% 2.5% !important;
+  }
+  .dashboard_box, .user_box, .dashboard_box h3, .show_user h3{
+    border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    margin:0 !important;
+    width: 100% !important;
+  }
+  #this_school_admin_users .row, #other_admin_users .row{
+    padding: 1% 2% !important;
+  }
+  .required_info{
+    margin-left: 2%;
+  }
+  .pdf_info{
+    margin: 0;
+  }
+  p.pdf_info{
+    font-size: 115%;
+  }
+  .responsive_padding2{
+    padding: 2%;
+  }
+  #top-menu > li > ul{
+    top:98%;
+  }
+  table.list td a[href$="edit"],
+  table.list td a[onclick],
+  table.list td a[href$="automounts"] {
+    width: 95%;
+  }
+} 
+@media screen and (orientation: portrait) and (max-device-width: 800px){
+  .container_wrap > h1{
+    margin-top: 1.2em !important;
+  }
+  div:not(#navbar_second_level) .wrap:first-of-type {
+    margin: 1em 0 0 !important;
+  }
+  .maincontent{
+    padding-top: 4% !important;
+  }
+}
+@media screen and (orientation: landscape) and (max-device-width: 960px){
+  div:not(#navbar_second_level) .wrap:first-of-type {
+    margin: 2em 0 0 !important;
+  }
+  .container_wrap{
+    margin: 3em 0 0 !important;
+  }
+}
+@media screen and (orientation: portrait) and (max-device-width: 540px){
+  div:not(#navbar_second_level) .wrap:first-of-type {
+    margin: 1em 0 0 !important;
+  }
+  .container_wrap{
+    margin: 3em 0 0 !important;
+  }
+}
+@media all and (max-width:540px){
+  body{
+    font-size: 65% !important;
+  }
+  #top-menu{
+    padding: 0;
+  }
+  #top-menu > li{
+    margin-right: 5px;
+  }
+  #top-menu > li.organisation-menu-button, #top-menu > li.school-menu-button{
+    margin-right: 7px;
+  }
+  #top-menu-right .login_username{
+    display: none;
+  }
+  #top-menu-right li a[onclick] {
+    background: url("../../images/iconset-breathe.png") no-repeat scroll center -955px #AD0000;
+    text-indent: -9999px;
+  }
+  #top-menu-right li a[onclick]:hover{
+    background: url("../../images/iconset-breathe.png") no-repeat scroll center -955px #DA0000;
+  }
+  .container_wrap > h1{
+    margin-top: 0 !important;
+  }
+  .mass_import_info span {
+    display: block;
+  }
+  img{
+    max-width: 97.5%;
+  }
+}
+@media all and (min-width:890px){
+  .password_container .login_content table tr td:nth-of-type(2n){
+    width:430px;
+  }
+  .password_container .login_content table tr:last-of-type td {
+      float: none;
+      margin: 0 75px 0 230px;
+      width:440px;
+  }
+}
+@media all and (max-width:890px) {
+  .password_container .login_content table tr td:nth-of-type(2n){
+    float:none;
+  }
+  .password_container .login_content table{
+    width:100%;
+  }
 }

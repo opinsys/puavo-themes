@@ -24,11 +24,14 @@ table.new_groups_table tr td{
     text-align: left !important;
     width: 100% !important;
   }
+  form table.autopoweroff_organisation tr td {
+    width: auto !important;
+  }
   form tr td input[type="text"], form tr td input[type="password"], form tr td input[type="email"], form tr td input[type="tel"], form input[type="text"], form input[type="password"] {
     width: 95%;
   }
   form table, .new_external_service table, .edit_external_service table {
-    margin: 2%;
+    padding-left: 2%;
     width: 100%;
   }
   .new_external_service tr td:nth-child(even), .new_external_service tr td:nth-child(odd), .edit_external_service tr:nth-child(even), .edit_external_service tr:nth-child(odd){
