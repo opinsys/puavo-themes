@@ -744,20 +744,19 @@ table.list {
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -webkit-border-radius: 2px 2px 2px 2px;
-  font-size: 90%;
   font-weight: normal;
   padding: 4px 8px;
   text-align: center;
   text-decoration: none;
 }
 .btn-danger{
-  background-color: #AD0000;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#AD0000), to(#8F0000));
-  background-image: -webkit-linear-gradient(top, #AD0000, #8F0000);
-  background-image: -o-linear-gradient(top, #AD0000, #8F0000);
-  background-image: linear-gradient(to bottom, #AD0000, #8F0000);
-  background-image: -moz-linear-gradient(top, #AD0000, #8F0000);
-  background-image: -ms-linear-gradient(top, #AD0000, #8F0000);
+  background-color: #D14836;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#D14836), to(#8F0000));
+  background-image: -webkit-linear-gradient(top, #D14836, #8F0000);
+  background-image: -o-linear-gradient(top, #D14836, #8F0000);
+  background-image: linear-gradient(to bottom, #D14836, #8F0000);
+  background-image: -moz-linear-gradient(top, #D14836, #8F0000);
+  background-image: -ms-linear-gradient(top, #D14836, #8F0000);
   background-repeat: repeat-x;
   color:#fff;
 }
